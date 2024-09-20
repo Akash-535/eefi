@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link href="https://fonts.cdnfonts.com/css/neue-machina" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEfi page</title>
@@ -24,13 +25,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="max-w-[1920px] mx-auto">
     <!-- ==Hero Section== -->
     <section class=" relative overflow-hidden ">
-        <div class="absolute max-lg:inset-0 z-10">
-            <img src="./assets/images/png/hero_section_layer.png" alt="Background"
-                class="w-full h-full max-lg:object-cover" />
+        <div class="absolute -z-10 max-md:w-[900px]">
+            <img src="./assets/images/webp/hero_section_layer.webp" alt="Background" class="w-full h-full " />
         </div>
+        <img src="./assets/images/webp/hero_section_layer_2.webp" alt="Secondary Image"
+            class="absolute bottom-0 -right-0  -z-20 max-w-[1000px] max-md:-right-[-100%]" />
         <div class="flex justify-center">
             <div class="container px-5 text-center relative z-20 ">
                 <div class="nav">
@@ -41,27 +43,33 @@
                         </div>
                         <div class="max-lg:hidden">
                             <ul class="flex gap-4">
-                                <a href="#">
+                                <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
+                                    href="#">
                                     <li class="text-base font-medium text-white">About</li>
                                 </a>
-                                <a href="#">
+                                <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
+                                    href="#">
                                     <li class="text-base font-medium text-white ">IBO Event</li>
                                 </a>
-                                <a href="#">
+                                <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
+                                    href="#">
                                     <li class="text-base font-medium text-white">EEFI Tokenomics</li>
                                 </a>
-                                <a href="#">
+                                <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
+                                    href="#">
                                     <li class="text-base font-medium text-white">Team</li>
                                 </a>
-                                <a href="#">
+                                <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
+                                    href="#">
                                     <li class="text-base font-medium text-white">Partners</li>
                                 </a>
-                                <a href="#">
+                                <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
+                                    href="#">
                                     <li class="text-base font-medium text-white ">Roadmap</li>
                                 </a>
                                 <a href="#">
                                     <li class="relative group">
-                                        <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-blue-800 pb-0.5 text-white"
+                                        <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white"
                                             href="#">
                                             More
                                             <img class="mt-1" src="./assets/images/svg/hero_dropdown_arrow.svg"
@@ -69,8 +77,9 @@
                                         </a>
                                         <ul class="absolute left-0 hidden group-hover:block bg-black text-white">
                                             <li><a class="block px-4 py-2 hover:bg-gray-700" href="#">Option 1</a></li>
-                                            <li><a class="block px-4 py-2 hover:bg-gray-700" href="#">Option 2</a></li>
-                                            <li><a class="block px-4 py-2 hover:bg-gray-700" href="#">Option 3</a></li>
+                                            <li><a class="block px-4 py-2 hover:bg-gray-700" href="#roadmap">Roadmap</a>
+                                            </li>
+                                            <li><a class="block px-4 py-2 hover:bg-gray-700" href="">Option 3</a></li>
                                         </ul>
                                     </li>
 
@@ -85,16 +94,16 @@
                         </div>
                         <div class="lg:hidden flex flex-col gap-2 justify-end items-end relative z-20 " id="navBtn"
                             onclick="navMenu()">
-                            <span class="w-10 h-1 bg-black btn"></span>
-                            <span class="w-10 h-1 bg-black btn1"></span>
-                            <span class="w-10 h-1 bg-black btn2"></span>
+                            <span class="w-10 h-1 bg-white btn"></span>
+                            <span class="w-10 h-1 bg-white btn1"></span>
+                            <span class="w-10 h-1 bg-white btn2"></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mobile-nav lg:hidden " id="mobileMenu">
                 <ul class="flex flex-col gap-4 mt-4 min-h-screen justify-center relative !z-20">
-                    <ul class="flex justify-center items-center gap-7 flex-col">
+                    <ul class="flex justify-center items-center gap-7 flex-col text-white">
                         <a href="#">
                             <li class="text-base font-medium">About</li>
                         </a>
@@ -117,33 +126,32 @@
                             <li class="text-base font-medium">More</li>
                         </a>
                     </ul>
-                    <ul class="flex justify-center items-center gap-7">
+                    <ul class="flex justify-center items-center gap-7 text-white">
                         <li><a class="  text-base text-center font-medium  leading-[23.52px] text-blue-600 border border-blue-500 rounded-xl py-4 px-[31px] duration-300 "
                                 href="#">Enter App</a></li>
                     </ul>
                 </ul>
             </div>
         </div>
-        <div class="max-w-[1140px] relative z-10 mx-auto">
-            <div class="flex flex-wrap">
+        <div class="max-w-[1140px] relative mx-auto">
+            <div class="flex max-lg:flex-wrap">
                 <div class="w-6/12 max-lg:w-full flex flex-col justify-center">
-                    <div class="w-max justify-center items-center flex flex-col"></div>
-                    <h1 class="max-w-[428px] text-[85px] leading-[112%] font-extrabold NeueMachina_font text-white">
-                        BUILIDING ELASTIC PROTOCOL
-                    </h1>
-                    <p class="leading-[150%] font-normal text-white max-w-[528px] mt-[30px]">
-                        An ecosystem of unique yield strategies that help you earn
-                        yield, amplify, and stretch it across all market conditions
-                    </p>
-                    <div class="mt-[26px]">
-                        <a class="underline text-white pt-[26px] font-bold" href="/">Audited by Omniscia
-                        </a>
+                    <div class=" justify-center items-center flex flex-col text-center px-3">
+                        <h1
+                            class="max-w-[428px] text-[85px] leading-[112%] font-extrabold NeueMachina_font text-white max-xl:text-[65px] max-lg:text-[55px] max-md:text-[40px] max-lg:text-center max-md:max-w-[360px]">
+                            BUILIDING ELASTIC PROTOCOL
+                        </h1>
+                        <p id="ecoSystem"
+                            class="leading-[150%] font-normal text-white max-w-[528px] mt-[30px] max-md:max-w-[400px] text-start">
+                        </p>
+                        <div class="mt-[26px]">
+                            <a class="underline text-white pt-[26px] font-bold" href="/">Audited by Omniscia
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="relative w-6/12 max-lg:w-full z-10">
-                    <img class="w-full" src="./assets/images/png/hero_img.png" alt="image" />
-                    <img src="./assets/images/png/hero_section_layer_2.png" alt="Secondary Image"
-                        class="absolute bottom-[40%] right-[2%]  " />
+                <div class="relative w-6/12 max-lg:w-full">
+                    <img class="w-full" src="./assets/images/webp/hero_img.webp" alt="image" />
                 </div>
             </div>
         </div>
@@ -151,45 +159,50 @@
     </section>
 
     <!-- ==Bear and Bull section -->
-    <section class="relative  bg-[url(./assets/images/png/amplify_background.png)] bg-cover bg-no-repeat bg-center">
+    <section
+        class="relative   bg-[url(./assets/images/webp/amplify_background.webp)] overflow-hidde  bg-cover bg-no-repeat">
         <div class="bg-black">
             <h2
                 class=" relative z-10 text-white plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-1 py-4">
                 Amplify and stretch gains</h2>
         </div>
-        <div class="container">
-            <div class="flex max-2xl:pt-10 pt-48">
-                <div class="max-w-[649px] bull_img -mt-[50px] " data-aos="fade-right" data-aos-easing="linear">
-                    <img src="/assets/images/png/Bull.png" alt="bull" class="">
-                </div>
-                <div class="max-w-[532px] max-2xl:mt-7 mt-7 mr-9 bear_img" data-aos="fade-left" data-aos-easing="linear"
+        <div class="container mx-auto flex justify-center items-center flex-col">
+            <div class="flex max-2xl:pt-10 pt-48 mx-auto">
+                <div class="max-w-[649px] bull_img md:-mt-[50px]  " data-aos="fade-right" data-aos-easing="linear"
                     data-aos-duration="1500">
-                    <img src="/assets/images/png/bear.png" alt="bear" class="">
+                    <img src="/assets/images/webp/bull.webp" alt="bull" class="max-md:max-w-[210px] mx-auto">
                 </div>
-
+                <div class="max-w-[532px] max-2xl:mt-7 mt-7  bear_img max-md:-ml-[18px]" data-aos="fade-left"
+                    data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="/assets/images/webp/bear.webp" alt="bear" class="max-md:max-w-[160px] mx-auto">
+                </div>
             </div>
             <div
-                class="flex items-center justify-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-2xl:mt-[55px] mt-[150px] z-20">
+                class="flex items-center justify-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-2xl:mt-[55px] mt-[150px] z-20 max-md:hidden">
                 <p class="text-center text-white max-w-[555px] text-sm font-normal leading-[157%] mx-auto">We take a
                     different balanced approach to finding and creating yield opportunities in the everchanging crypto
                     market. Our yield strategies help users stay protected and hedged during bear markets and amplify
                     yield during bull markets without resorting to leverage or other dangerous techniques.</p>
             </div>
-            <div class="flex items-center justify-center">
-                <img src="/assets/images/png/men_img.png" alt="men" class="absolute bottom-0  w-[100px]">
-
+            <div class="flex items-center justify-center ">
+                <img src="/assets/images/webp/men_img.webp" alt="space-man-stand"
+                    class="absolute bottom-0 w-[100px] max-md:w-[60px] max-md:bottom-[30%] max-md:left-[46%] pb-[4%]">
             </div>
-            <div>
-                <img class="absolute -bottom-[14%] w-full z-50" src="./assets/images/png/Cloudsbottom.png" alt="cloud">
-            </div>
-
         </div>
-
+        <div class="md:hidden bg-black p-3">
+            <p class="text-center text-white max-w-[450px] text-xs font-normal leading-[157%] mx-auto">We take a
+                different balanced approach to finding and creating yield opportunities in the everchanging crypto
+                market. Our yield strategies help users stay protected and hedged during bear markets and amplify
+                yield during bull markets without resorting to leverage or other dangerous techniques.</p>
+        </div>
+        <img class="absolute w-full -bottom-[12%] max-[576px]:bottom-[-10%] max-[426px]:bottom-[-7%]"
+            src="./assets/images/webp/Cloudsbottom.webp" alt="clouds">
     </section>
+
     <!-- ==Road map== -->
-    <section>
+    <section id="roadmap">
         <div>
-            <div class="bg-[url('./assets/images/png/roadmap_background.png')] bg-cover p-4">
+            <div class="bg-[url('./assets/images/webp/roadmap_background.webp')] bg-cover p-4">
                 <h2 class="text-[46px] NeueMachina_font  text-white font-bold mb-12 text-center ">Roadmap</h2>
                 <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
                     <div class="relative flex md:contents flex-row-reverse ">
@@ -219,7 +232,7 @@
                             </div>
                             <div
                                 class="absolute w-6 h-6 -mt-3 bg-[#4273FF] border-4 border-[#253E88] rounded-full top-[10%] ">
-                            </div><img class="absolute top-[10%] -left-7"
+                            </div><img class="absolute top-[10%] md:-left-7 max-md:-right-7"
                                 src="./assets/images/svg/timeline_box_line.svg" alt="">
                         </div>
                     </div>
@@ -283,7 +296,7 @@
                             </div>
                             <div
                                 class="absolute w-6 h-6 -mt-3 bg-[#4273FF] border-4 border-[#253E88] rounded-full top-[10%] ">
-                            </div><img class="absolute top-[10%] -left-7"
+                            </div><img class="absolute top-[10%] md:-left-7 max-md:-right-7"
                                 src="./assets/images/svg/timeline_box_line.svg" alt="">
                         </div>
                     </div>
@@ -359,7 +372,7 @@
                             </div>
                             <div
                                 class="absolute w-6 h-6 -mt-3 bg-[#4273FF] border-4 border-[#253E88] rounded-full top-[10%] ">
-                            </div><img class="absolute top-[10%] -left-7"
+                            </div><img class="absolute top-[10%] md:-left-7 max-md:-right-7"
                                 src="./assets/images/svg/timeline_box_line.svg" alt="">
                         </div>
                     </div>
@@ -416,7 +429,7 @@
                             </div>
                             <div
                                 class="absolute w-6 h-6 -mt-3 bg-[#4273FF] border-4 border-[#253E88] rounded-full top-[10%] ">
-                            </div><img class="absolute top-[10%] -left-7"
+                            </div><img class="absolute top-[10%] md:-left-7 max-md:-right-7"
                                 src="./assets/images/svg/timeline_box_line.svg" alt="">
                         </div>
                     </div>
@@ -469,7 +482,7 @@
                             </div>
                             <div
                                 class="absolute w-6 h-6 -mt-3 bg-[#4273FF] border-4 border-[#253E88] rounded-full top-[10%] ">
-                            </div><img class="absolute top-[10%] -left-7"
+                            </div><img class="absolute top-[10%] md:-left-7 max-md:-right-7"
                                 src="./assets/images/svg/timeline_box_line.svg" alt="">
                         </div>
                     </div>
@@ -501,7 +514,7 @@
     </section>
 
     <!-- ==footer== -->
-    <section class=" py-[150px]  bg-[url('./assets/images/png/footer_bg_images.png')] bg-cover -mt-1 min-h-screen">
+    <section class=" py-[150px]  bg-[url('./assets/images/webp/footer_bg_images.webp')] bg-cover -mt-1 min-h-screen">
         <div class="container max-w-[1140px] mx-auto relative z-20">
             <div class="w-full gap-y-10 flex flex-wrap">
                 <div class="lg:w-1/2 w-full px-3 content-center">

@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/NeueMachina-Regular.ttf") format("woff2");
+  font-family: "Neue Machina Bold";
+  src: url("../fonts/NeueMachina-Ultrabold.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 .NeueMachina_font {
-  font-family: "Neue Machina", sans-serif;
+  font-family: "Neue Machina Bold", sans-serif;
 }
 .raleway_font {
   font-family: "Raleway", sans-serif;

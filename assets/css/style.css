@@ -5,6 +5,7 @@
   src: url("../fonts/NeueMachina-Ultrabold.ttf") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 .NeueMachina_font {
   font-family: "Neue Machina Bold", sans-serif;

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEfi page</title>
     <link rel="icon" href="./assets/images/svg/eefi_logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,7 +29,8 @@
 <body class="max-w-[1920px] mx-auto">
     <!-- ==Hero Section== -->
     <section class=" relative overflow-hidden ">
-        <img class="absolute right-2 top-[10%] max-md:hidden" src="./assets/images/svg/hero_right_dots.svg" alt="dots">
+        <img class="absolute right-2 top-[10%] max-md:hidden" src="./assets/images/svg/hero_right_dots.svg" alt="dots"
+            loading="lazy">
         <div class="absolute -z-10 max-md:w-[900px]">
             <img src="./assets/images/webp/hero_section_layer.webp" alt="Background" class="w-full h-full " />
         </div>
@@ -48,15 +50,12 @@
                                 <li
                                     class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white">
                                     <a href="#" class="text-base font-medium text-white">About</a></li>
-
                                 <li
                                     class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white ">
                                     <a href="#" class="text-base font-medium text-white ">IBO Event </a></li>
-
                                 <li
                                     class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white">
                                     <a href="#" class="text-base font-medium text-white"> EEFI Tokenomics </a></li>
-
                                 <li
                                     class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-white pb-0.5 text-white">
                                     <a href="#" class="text-base font-medium text-white"> Team </a></li>
@@ -154,8 +153,10 @@
                             class="max-w-[428px] text-[85px] leading-[112%] font-extrabold NeueMachina_font text-white max-xl:text-[65px] max-lg:text-[55px] max-md:text-[40px] max-lg:text-center max-md:max-w-[360px]">
                             BUILIDING ELASTIC PROTOCOL
                         </h1>
-                        <p id="ecoSystem"
+                        <p
                             class="leading-[150%] font-normal text-white max-w-[528px] mt-[30px] max-md:max-w-[400px] text-start">
+                            An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it
+                            across all market conditions
                         </p>
                         <div class="mt-[26px]">
                             <a class="underline text-white pt-[26px] font-bold" href="/">Audited by Omniscia
@@ -168,9 +169,7 @@
                 </div>
             </div>
         </div>
-
     </section>
-
     <!-- ==Bear and Bull section -->
     <section
         class="relative   bg-[url(./assets/images/webp/amplify_background.webp)] overflow-hidde  bg-cover bg-no-repeat">
@@ -209,14 +208,13 @@
                 yield during bull markets without resorting to leverage or other dangerous techniques.</p>
         </div>
         <img class="absolute w-full -bottom-[12%] max-[576px]:bottom-[-10%] max-[426px]:bottom-[-7%]"
-            src="./assets/images/webp/Cloudsbottom.webp" alt="clouds">
+            src="./assets/images/svg/Cloudsbottom.svg" alt="clouds">
     </section>
-
     <!-- ==Road map== -->
     <section id="roadmap">
         <div>
             <div class="bg-[url('./assets/images/webp/roadmap_background.webp')] bg-cover p-4">
-                <h2 class="text-[46px] NeueMachina_font  text-white font-bold mb-12 text-center ">Roadmap</h2>
+                <h2 class="text-[46px] NeueMachina_font  text-white font-bold mb-12 text-center pt-10">Roadmap</h2>
                 <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
                     <div class="relative flex md:contents flex-row-reverse ">
                         <div
@@ -525,10 +523,9 @@
             </div>
         </div>
     </section>
-
     <!-- ==footer== -->
     <section
-        class=" py-[150px] max-md:pt-[50px] max-md:pb-[100px]  bg-[url('./assets/images/webp/footer_bg_images.webp')] bg-cover -mt-1 min-h-screen">
+        class=" pb-[100px] pt-[50px] max-md:pb-[100px]  bg-[url('./assets/images/webp/footer_bg_images.webp')] bg-cover -mt-1">
         <div class="container max-w-[1140px] mx-auto relative z-20">
             <div class="w-full gap-y-10 flex flex-wrap">
                 <div class="lg:w-1/2 w-full px-3 content-center">
@@ -709,6 +706,12 @@
         </div>
     </section>
     <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 </body>
 
 </html>

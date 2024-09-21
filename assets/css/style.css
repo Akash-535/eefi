@@ -7,6 +7,9 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  scroll-behavior: smooth;
+}
 .NeueMachina_font {
   font-family: "Neue Machina Bold", sans-serif;
 }

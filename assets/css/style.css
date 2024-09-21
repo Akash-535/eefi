@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
 @font-face {
   font-family: "Neue Machina Bold";
   src: url("../fonts/NeueMachina-Ultrabold.ttf") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
-
 .NeueMachina_font {
   font-family: "Neue Machina Bold", sans-serif;
 }
 .raleway_font {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 .jakartaSans_font {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -27,7 +26,6 @@
   z-index: 10;
   padding: 16px;
 }
-
 .mobile-nav.active {
   left: 0;
   right: 50%;
@@ -35,22 +33,18 @@
 .btn {
   transition: transform 0.3s ease;
 }
-
 .btn2 {
   transition: transform 0.3s ease;
 }
 .btn1 {
   transition: opacity 0.3s ease;
 }
-
 .active .btn {
   transform: rotate(45deg) translate(6px, 8px);
 }
-
 .active .btn2 {
   transform: rotate(-45deg) translate(7px, -10px);
 }
-
 .active .btn1 {
   opacity: 0;
 }

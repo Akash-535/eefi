@@ -2,13 +2,28 @@
 @import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
 @font-face {
   font-family: "Neue Machina Bold";
-  src: url("../fonts/NeueMachina-Ultrabold.ttf") format("woff2");
-  font-weight: 400;
+  src: local("Pacifico Regular"), local("Neue-Machina-Bold"),
+    url(../fonts/NeueMachina-Ultrabold.ttf) format("woff2");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: Neue Machina regular;
+  src: local("Pacifico Regular"), local("Neue-Machina-Regular"),
+    url(../fonts/NeueMachina-Regular.ttf) format("woff2");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.NeueMachina_font_regular {
+  font-family: "Neue Machina regular", sans-serif;
 }
 .NeueMachina_font {
   font-family: "Neue Machina Bold", sans-serif;

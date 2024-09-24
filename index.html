@@ -1,39 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <link href="https://fonts.cdnfonts.com/css/neue-machina" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEfi page</title>
     <link rel="icon" href="./assets/images/svg/eefi_logo.svg">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                container: {
-                    padding: '12px',
-                    center: true,
-                    screens: {
-                        sm: "600px",
-                        md: "728px",
-                        lg: "984px",
-                        xl: "1240px",
-                        "2xl": "1496px",
-                    },
-                },
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    },
-                    boxShadow: {
-                        innerCustom: 'inset 0px 0px 100px 0px black',
-                    },
-                },
-            },
-        },
-    </script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" href="./assets/images/webp/blur_layer.webp" as="image">
+
     <!-- Primary Meta Tags -->
     <meta name="title" content="EEFI finance" />
     <meta name="description" content="     An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it
@@ -56,22 +33,37 @@
     <meta property="twitter:image" content="/assets/images/metaImage.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    padding: '12px',
+                    center: true,
+                    screens: {
+                        sm: "600px",
+                        md: "728px",
+                        lg: "984px",
+                        xl: "1240px",
+                        "2xl": "1496px",
+                    },
+                },
+
+            },
+        }
+    </script>
 </head>
 
 <body class="max-w-[1440px] mx-auto">
     <!-- ==Hero Section== -->
-    <section class=" relative overflow-hidden ">
-        <img class="absolute right-2.5 top-[10%] max-md:hidden" src="./assets/images/svg/hero_right_dots.svg"
-            alt="dots">
-        <div class="">
-            <img width="1150px"
-                class="absolute top-0 left-0 max-lg:w-full  2xl:w-9/12 -z-10 max-lg:h-full max-lg:object-cover"
-                src="./assets/images/webp/blur_layer.webp" alt="layer">
-        </div>
-        <img width="1000px" src="./assets/images/webp/hero_layer2.webp" alt="Secondary Image"
-            class="absolute top-0 -right-0  -z-20  max-md:-right-[-100%]" />
+    <section class=" relative overflow-hidden pt-5">
+        <img class="absolute right-4 top-[10%] max-md:hidden" src="./assets/images/svg/hero_right_dots.svg" alt="dots">
+        <img class=" w-[1150px] absolute top-0  max-lg:hidden  2xl:w-9/12 -z-10"
+            src="./assets/images/webp/blur_layer.webp" alt="layer">
+        <img class="lg:hidden w-full h-full object-cover" src="./assets/images/webp/blur_layer.webp" alt="layer">
+        <img src="./assets/images/webp/hero_layer2.webp" alt="Secondary Image"
+            class="absolute top-0 -right-0  -z-20  max-md:-right-[-100%] max-md:hidden w-[1000px]" />
         <div class="flex justify-center">
-            <div class="container px-5 text-center relative  pt-3 mx-auto">
+            <div class="container px-5 text-center relative   mx-auto">
                 <div class="nav">
                     <div class="flex justify-between items-center ">
                         <div>
@@ -117,7 +109,7 @@
                         </div>
                         <div>
                             <ul class="flex gap-4 items-center max-lg:hidden">
-                                <li><a class="  text-base text-center font-medium  text-blue-600 border border-blue-500 rounded-xl py-4 px-[31px] duration-300   hover:text-white hover:bg-blue-600"
+                                <li><a class="  text-base text-center font-medium bg-white  text-blue-600 border border-blue-500 rounded-xl py-3 px-[31px] duration-300   hover:text-white hover:bg-blue-600"
                                         href="#">Enter App</a></li>
                             </ul>
                         </div>
@@ -173,7 +165,7 @@
                         </li>
                     </ul>
                     <ul class="flex justify-center items-center gap-7 text-white mt-5">
-                        <li><a class="  text-base text-center font-medium  leading-[23.52px] text-blue-600 border border-blue-500 rounded-xl py-4 px-[31px] duration-300 "
+                        <li><a class="  text-base text-center bg-white font-medium  leading-[23.52px] text-blue-600 border border-blue-500 rounded-xl py-4 px-[31px] duration-300 "
                                 href="#">Enter App</a></li>
                     </ul>
                 </div>
@@ -181,7 +173,8 @@
         </div>
         <div class="container mx-auto flex flex-col lg:flex-row  pt-20 max-lg:pt-1 lg:pt-3">
             <div class="w-full lg:w-6/12 text-white text-center lg:text-left px-6 pt-[5%]">
-                <h1 class="text-4xl lg:text-[85px] font-medium NeueMachina_font leading-tight">BUILDING ELASTIC PROTOCOL
+                <h1 class="text-4xl lg:text-[85px] font-medium NeueMachina_font_regular leading-tight">BUILDING ELASTIC
+                    PROTOCOL
                 </h1>
                 <p class="mt-4 text-lg font-normal raleway_font">An Ecosystem Of Unique Yield Strategies That Help You
                     Earn Yield,
@@ -201,7 +194,7 @@
     </section>
     <!-- ==Bear and Bull section -->
     <section id="bull"
-        class="relative   bg-[url(./assets/images/webp/amplify_background.webp)]   bg-cover bg-no-repeat">
+        class="relative   bg-[url(./assets/images/webp/amplify_background.webp)]   bg-cover bg-no-repeat bg-center">
         <div class="bg-black">
             <h2
                 class=" relative z-10 text-white plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-3 py-4">
@@ -237,7 +230,7 @@
                 yield during bull markets without resorting to leverage or other dangerous techniques.</p>
         </div>
         <img class="absolute w-full -bottom-[12%] max-[576px]:bottom-[-10%] max-[426px]:bottom-[-7%]"
-            src="./assets/images/svg/Cloudsbottom.svg" alt="clouds">
+            src="./assets/images/webp/Cloudsbottom.webp" alt="clouds">
     </section>
     <!-- ==Road map== -->
     <section id="roadmap" class="overflow-hidden ">
@@ -554,16 +547,19 @@
     </section>
     <!-- ==footer== -->
     <section id="footer"
-        class=" pb-[100px] pt-[50px] max-md:pb-[100px]  bg-[url('./assets/images/webp/footer_bg_images.webp')] bg-cover -mt-1">
+        class=" pb-[100px] pt-[40px] max-md:pb-[80px]  bg-[url('./assets/images/webp/footer_bg_images.webp')] bg-cover -mt-1">
         <div class="container max-w-[1140px] mx-auto relative z-20">
             <div class="w-full gap-y-10 flex flex-wrap">
                 <div class="lg:w-1/2 w-full px-3 content-center">
                     <div class="max-w-[572px]">
                         <div class="gap-y-10 flex flex-col">
                             <div class="gap-3 flex flex-col">
-                                <h3 class="text-white text-[46px] font-extrabold NeueMachina_font">(E,E) Game Theory: An
+                                <h3
+                                    class="text-white text-[46px] font-extrabold NeueMachina_font max-lg:text-[36px] max-md:text-[30px]">
+                                    (E,E) Game Theory: An
                                     UPGRADE from (3,3)</h3>
-                                <p class="text-white text-base font-normal  italic max-w-[515px] raleway_font pt-4">
+                                <p
+                                    class="text-white text-base font-normal  italic max-w-[515px] raleway_font pt-4 max-md:text-sm">
                                     Remember
                                     (3,3)
                                     at its
@@ -626,7 +622,7 @@
                         <div class="w-max absolute top-[29%] max-[560px]:left-[3%] ">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;"
                                 class="bg-white rounded-[5.2px] flex flex-col justify-center max-[560px]:px-2 items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/eefi_bons.svg" alt="EEFI_Bonds">
+                                <img class="max-w-[27px]" src="./assets/images/svg/eefi_bons.svg" alt="EEFI_Bonds">
                                 <h1
                                     class="NeueMachina_font text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">
                                     EEFI Bonds</h1>
@@ -639,7 +635,7 @@
                         <div style="transform: translate(-50%);" class="w-max absolute top-[29%] left-1/2">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:px-2 max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/valute.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/valute.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">
                                     Vault </h1>
@@ -652,7 +648,7 @@
                         <div class="w-max  top-[29%] absolute max-[560px]:right-[3%] right-0">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:px-2 max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/lp_position.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/lp_position.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">
                                     LP Positions </h1>
@@ -665,7 +661,7 @@
                         <div class="w-max max-[560px]:left-[3%] top-[49%] absolute  ">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:px-2 max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/funding_raised.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/funding_raised.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base max-[530px]:text-[11px] leading-[150%] text-center mt-2">
                                     Funding raised acquires
@@ -676,7 +672,7 @@
                         <div style="transform: translate(-50%);" class="w-max absolute top-[49%] left-1/2">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:px-2 max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/ohm_tresury.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/ohm_tresury.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base max-[530px]:text-[12px]  leading-[150%] text-center mt-2">
                                     OHM Treasury Strategy
@@ -689,7 +685,7 @@
                         <div class="w-max absolute max-[560px]:right-[3%] right-0 top-[49%] ">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[560px]:px-2 max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/market.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/market.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base max-[530px]:text-[12px] leading-[150%] text-center mt-2">
                                     Markets </h1>
@@ -701,7 +697,7 @@
                         <div class="w-max absolute  right-[53%] top-[69%] ">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[560px]:px-2 max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/yiled_form.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/yiled_form.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">
                                     Yield From Growth Assets</h1>
@@ -710,7 +706,7 @@
                         <div class="w-max absolute right-[17.5%] top-[69%] ">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[560px]:px-2 max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/fees_revenue.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/fees_revenue.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">
                                     Fees. Revenue. Yield to Treasury</h1>
@@ -719,7 +715,7 @@
                         <div class="w-max absolute right-[35%] top-[89.5%] ">
                             <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
             " class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[560px]:px-2 max-[530px]:max-w-[100px]  h-[130px]">
-                                <img src="./assets/images/svg/eefi_furance.svg" alt="lock">
+                                <img class="max-w-[27px]" src="./assets/images/svg/eefi_furance.svg" alt="lock">
                                 <h1
                                     class="NeueMachina_font text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">
                                     EEFI Furnace </h1>
@@ -734,7 +730,7 @@
             </div>
         </div>
     </section>
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js" defer async></script>
 </body>
 
 </html>
